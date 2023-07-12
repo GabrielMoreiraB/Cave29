@@ -1,0 +1,81 @@
+
+
+/* Menu */
+
+.menu{
+    padding: .5em;
+}
+
+.nav_list > ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav_list, .nav_list_mobile  {
+    color: #822726;
+    font-weight: 700;
+    font-size: 1.5em;
+    font-family: 'Cookie', cursive;
+}
+
+.nav_list{
+    display: none;
+}
+
+.nav_list_mobile{
+    text-align: center;
+    margin: 1em ;
+}
+
+.icon_burguer{
+    display: block;
+}
+
+@media (min-width: 720px){
+    .icon_burguer{
+        display: none;
+    } 
+    .nav_list{
+        display: block;
+    }
+}
+
+
+/* botao menu */
+.burger {
+    display: flex;
+    flex-direction: column;
+    width: 2rem;
+    border: 0;
+    padding: 0;
+    gap: .2rem;
+    background: none;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+  
+  .burger :where(.top_bread, .meat, .bottom_bread) {
+    background: #822726;
+    height: 6px;
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+    transition: transform 300ms ease;
+  }
+  
+  .burger[aria-expanded=true] .top_bread {
+    transform: translateY(calc(6px + .2rem)) rotate(45deg);
+  }
+  
+  .burger[aria-expanded=true] .meat {
+    transform: rotate(45deg);  
+  }
+  
+  .burger[aria-expanded=true] .bottom_bread {
+    transform: translateY(calc(-6px + -.2rem)) rotate(-45deg);
+  }
+
+/*   .hidden{
+    display: none !important;
+} */

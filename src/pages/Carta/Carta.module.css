@@ -1,0 +1,65 @@
+
+
+/* Carta */
+
+.carta{
+    padding-top: 2em;
+}
+
+.title_carta > h2{
+    font-family: 'Cookie', cursive;
+    font-size: 3em;
+    text-align: center;
+    color: #822726;
+}
+
+.under_title_carta{
+    width: 6em;
+   height: 0.2em;
+   background: rgb(130,39,38);
+background: linear-gradient(90deg, rgba(130,39,38,1) 0%, rgba(2,0,36,1) 50%, rgba(130,39,38,1) 100%);
+   margin:0 auto 3em auto;
+
+}
+
+.botoes_filtro{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+    flex-wrap: wrap;
+}
+
+.botao_filtro{
+    text-align: center;
+    width: auto;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    background-color:  rgb(130,39,38);
+    color: #ffffff;
+    padding: 0.5em 1em;
+    box-shadow: 5px 5px 0px 0px rgb(237 36 51 / 30%);
+    font-size: .8em;
+    font-weight: 600;
+    border: 3px solid #ffffff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.botao-filtro:hover{
+    background-color: #ffffff;
+    color: rgb(130,39,38);
+    border: 3px solid  rgb(130,39,38);
+}
+
+.card_space{
+    background-color: #822726;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-bottom: 2em;
+    padding-top: 2em;
+    box-shadow: 10px 10px 10px rgba(78, 15, 15, 0.5);
+}
