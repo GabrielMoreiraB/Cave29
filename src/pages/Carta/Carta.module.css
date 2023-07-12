@@ -28,6 +28,8 @@ background: linear-gradient(90deg, rgba(130,39,38,1) 0%, rgba(2,0,36,1) 50%, rgb
     justify-content: space-evenly;
     margin-bottom: 3em;
     flex-wrap: wrap;
+    max-width: 2000px;
+    margin: auto;
 }
 
 .botao_filtro{
@@ -62,4 +64,6 @@ background: linear-gradient(90deg, rgba(130,39,38,1) 0%, rgba(2,0,36,1) 50%, rgb
     margin-bottom: 2em;
     padding-top: 2em;
     box-shadow: 10px 10px 10px rgba(78, 15, 15, 0.5);
+    max-width: 2000px;
+    margin: auto;
 }
