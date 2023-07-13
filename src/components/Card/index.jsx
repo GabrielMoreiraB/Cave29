@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import styles from './Card.module.css';
 import { GiCellarBarrels, GiGrapes } from "react-icons/gi";
 
 const Card = ({vinho}) => {
   return (
     <>
-      <div className={styles.card_front}>
+      <Link to={`/vinho/${vinho.id}`} className={styles.card_front}>
         <img src={vinho.imagem} alt={vinho.nome} />
         <div className={styles.card_info}>
           <h2 className={styles.card_name}>{vinho.nome}</h2>
@@ -28,7 +29,7 @@ const Card = ({vinho}) => {
             </div>
           </div>
         </div>
-      </div>
+      </Link>
     </>
   );
 };

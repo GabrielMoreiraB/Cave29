@@ -1,0 +1,51 @@
+
+
+.container_img{
+    display: flex;
+}
+
+.container_img_info{
+    padding: 2em ;
+}
+
+.container_title{
+    font-size: 3em;
+    padding-bottom: 1em;
+    color:  #822726;
+    font-family:  'Cookie', cursive;
+}
+
+.container_icons{
+    display: flex;
+    gap: 2em;
+    padding-bottom: 1em;
+    font-size: 1em;
+    
+}
+
+.historia{
+    font-size: 1.1em;
+    max-width: 600px;
+    padding: 1em 0;
+}
+
+.valor_container{
+    font-size: 2em;
+    font-family:'ZCOOL XiaoWei', sans-serif; 
+    color:  #822726;
+}
+
+.valor{
+    font-family:'ZCOOL XiaoWei', sans-serif; 
+}
+
+.botao_compra{
+    margin: 2em;
+    padding: 1em 2em;
+    background-color: #822726;
+    color: aliceblue;
+    font-weight: 600;
+    border-radius: 30px;
+    font-family: 'Cookie', cursive;
+    font-size: 2em;
+}

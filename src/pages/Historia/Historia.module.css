@@ -1,0 +1,182 @@
+
+
+
+.banner{
+    background-image: url(bannerBarril.jpg);
+    height: 50vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner_titulo{
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+    color:  #822726;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.banner_texto{
+    font-size: 1em;
+    font-weight: 300;
+}
+
+@media (min-width: 720px){
+    .banner_titulo{
+        font-size: 6em;
+    }
+    
+    .banner_texto{
+        font-size: 1.5em;
+    }
+}
+
+/* Cards */
+
+.cards{
+    display: flex;
+    margin-top: -3em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    
+}
+
+.card{
+    background-color:hsl(210, 10%, 92%);
+    color:  #822726;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    width: 60vw;
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.551);
+    gap: 1em;
+    
+    
+}
+
+.card_icon {
+    font-size: 2.5em;
+}
+
+.card_title{
+    font-size: 2em;
+    font-family:  'ZCOOL XiaoWei', sans-serif;
+}
+
+.card_text{
+    text-align: center;
+}
+
+@media (min-width: 720px){
+    .cards{
+        flex-direction: row;
+    }
+    .card{
+        width: 25vw;
+    }
+}
+
+.history{
+    display: grid;
+    align-items: center;
+    gap: 2em;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3em 0;
+}
+
+.history_conteudo{
+    text-align: center;
+    width: 65vw;
+    color:  #822726;
+    background-image: url(fundo.png);
+    background-position: left bottom;
+    background-size: cover;
+}
+
+.history_img{
+    width: 65vw;
+}
+
+.title_conteudo{
+    font-family: 'Cookie', cursive;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.under_title{
+     width: 10em;
+    height: 0.35em;
+    background: rgb(130,39,38);
+background: linear-gradient(90deg, rgba(130,39,38,1) 0%, rgba(2,0,36,1) 50%, rgba(130,39,38,1) 100%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+
+
+
+@media (min-width: 720px){
+    .history{
+        grid-template-columns: 2fr;
+    }
+    .history_conteudo{
+        grid-column: 1/2;
+        width: 40vw;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        flex-direction: column;
+        height: 100%;
+        margin: auto;
+    }
+    .history_img{
+        grid-column: 2/3;
+        width: 40vw;
+        max-width: 1000px;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+
+    
+}
+
+.banner_fixed{
+    height: 20vw;
+    background-image: url(bannerBarril.jpg);
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-shadow: 1px 1px 0px black;
+    margin-bottom: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_banner{
+    font-family:  'Cookie', cursive;
+    color: #ffffff;
+    font-size: 1.5em;
+    max-width: 80vw;
+    text-align: center;
+    
+}
+
+@media (min-width: 720px){
+    .text_banner{
+        font-size: 3em;
+    }
+}

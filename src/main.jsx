@@ -8,7 +8,7 @@ import Navigation from './components/Navigation'
 import Carta from './pages/Carta'
 import Historia from './pages/Historia'
 import Localizacao from './pages/Localizacao'
-import VinhoPage from './pages/VinhoPage'
+import Vinho from './pages/Vinho'
 
 const router = createBrowserRouter([
   {
@@ -26,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/localizacao',
         element: <Localizacao/>,
+      },
+      {
+        path: '/vinho/:id',
+        element: <Vinho/>,
       }
     ]
   }
