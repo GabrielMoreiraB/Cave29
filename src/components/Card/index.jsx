@@ -20,9 +20,6 @@ const Card = ({vinho}) => {
               </div>
             </div>
           <div className={styles.card_front_info_valor}>
-            <button className={`${styles.btn_troca} ${styles.btn_trocaF}`} >
-              <img src="img/produtos/icons/info.png" alt='' />
-            </button>
             <div className={styles.valor_front}>
             <div className={styles.bola}></div>
               <h2>R$${vinho.preco.toFixed(2)}</h2>

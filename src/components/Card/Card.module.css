@@ -39,7 +39,7 @@
 .card_front_info_valor{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: end;
     padding: 1em;
 }
 

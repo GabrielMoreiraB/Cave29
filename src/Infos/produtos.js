@@ -12,6 +12,7 @@
         teor:"13%",
         harmonizacao: "Harmonize com carnes vermelhas, massas e risotos.",
         vinicola: "Buffon",
+        amadurecimento: "Parte do vinho passa em carvalho francês.",
         preco: 89.90,
     },
     {
@@ -27,6 +28,7 @@
         teor:"10%",
         harmonizacao:"Culinária asiática, salada de frutas e sobremesas à base de cremes.",
         vinicola: "Buffon",
+        amadurecimento: "Parte do vinho passa em carvalho francês.",
         preco: 89.90,
     },
     {
@@ -42,6 +44,7 @@
         teor:"10%",
         harmonizacao:"Culinária asiática, salada de frutas e sobremesas à base de cremes.",
         vinicola: "Buffon",
+        amadurecimento: "Parte do vinho passa em carvalho francês.",
         preco: 89.90,
     }
 ]

@@ -2,6 +2,8 @@
 
 .container_img{
     display: flex;
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgb(130, 39, 38,0.8);
 }
 
 .container_img_info{
@@ -48,4 +50,22 @@
     border-radius: 30px;
     font-family: 'Cookie', cursive;
     font-size: 2em;
+}
+
+.container_caracteristica{
+    padding: 1.5em;
+}
+
+.caracteristica_title{
+    font-size: 2em;
+    font-family:'ZCOOL XiaoWei', sans-serif; 
+    color:  #822726;
+}
+
+.caracteristica{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5em;
+   row-gap: 1.5em;
+   column-gap: 2em;
 }

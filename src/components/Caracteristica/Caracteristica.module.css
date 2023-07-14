@@ -1,0 +1,24 @@
+.caracteristica_unidade{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    gap: .5em;
+    width: 250px;
+    height: 50px;
+}
+
+.caracteristica_icon{
+    grid-row: 1/3;
+    font-size: 2em;
+    color: rgb(59, 59, 59);
+}
+
+.caracteristica_texto{
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.caracteristica_texto_info{
+    grid-column: 2/3;
+    align-self: flex-start;
+}
