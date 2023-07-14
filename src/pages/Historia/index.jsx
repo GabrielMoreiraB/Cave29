@@ -59,7 +59,7 @@ const Historia = () => {
         </div>
       </section>
 
-      <section className={styles.history} data-aos="fade-left" data-aos-duration="1000">
+      <section className={styles.history} data-aos="fade-right" data-aos-duration="1000">
         <div className={styles.history_conteudo}>
           <h2 className={styles.title_conteudo}>Conheça Nossa Historia</h2>
           <div className={styles.under_title}></div>

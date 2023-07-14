@@ -22,7 +22,7 @@ const Vinho = () => {
   return (
     <>
       <div className={styles.container_img}>
-        <img src={`/${vinho.imagem}`} alt={vinho.nome} />
+        <img className={styles.img} src={`/${vinho.imagem}`} alt={vinho.nome} />
         <div className={styles.container_img_info}>
           <h1 className={styles.container_title}>{vinho.nome}</h1>
           <div className={styles.container_icons}>
@@ -44,7 +44,7 @@ const Vinho = () => {
               {vinho.preco && vinho.preco.toFixed(2)}
             </span>
           </h3>
-          <button className={styles.botao_compra}>comprar</button>
+          <a href="https://www.google.com.br/maps/place/Cave+29+Bebidas+Especiais/@-21.1205941,-42.9519162,17z/data=!3m1!4b1!4m6!3m5!1s0xa31b3996031fbf:0x1546515af0f06748!8m2!3d-21.1205941!4d-42.9497275!16s%2Fg%2F11s0kbs6rt" className={styles.botao_compra}> Comprar</a>
         </div>
       </div>
       <div className={styles.container_caracteristica}>

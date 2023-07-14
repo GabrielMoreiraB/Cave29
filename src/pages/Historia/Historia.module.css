@@ -3,7 +3,7 @@
 
 .banner{
     background-image: url(bannerBarril.jpg);
-    height: 50vw;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

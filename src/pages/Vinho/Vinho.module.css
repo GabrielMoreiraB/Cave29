@@ -1,13 +1,24 @@
 
 
 .container_img{
-    display: flex;
+    display:flex;
+    flex-wrap: wrap;
     padding-bottom: 1em;
     border-bottom: 1px solid rgb(130, 39, 38,0.8);
 }
 
+@media (max-width: 720px){
+    .img{
+        width: 90vw;
+    }
+}
+
 .container_img_info{
     padding: 2em ;
+    margin: 0 auto;
+    background-image: url('/fundo.png');
+    background-position: left bottom;
+    background-size: cover;
 }
 
 .container_title{
@@ -35,6 +46,7 @@
     font-size: 2em;
     font-family:'ZCOOL XiaoWei', sans-serif; 
     color:  #822726;
+    margin-bottom: 3em;
 }
 
 .valor{
@@ -42,8 +54,8 @@
 }
 
 .botao_compra{
+    padding: 0.5em 1em;
     margin: 2em;
-    padding: 1em 2em;
     background-color: #822726;
     color: aliceblue;
     font-weight: 600;

@@ -4,6 +4,9 @@
 
 .menu{
     padding: .5em;
+    background-color: #D9BEA7;
+    box-shadow: 4px 9px 6px #D9BEA7;
+    margin-bottom: 1em;
 }
 
 .nav_list > ul{

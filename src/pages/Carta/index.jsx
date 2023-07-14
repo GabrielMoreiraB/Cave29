@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './Carta.module.css';
 import Produtos from '../../Infos/produtos';
 import Card from '../../components/Card';
@@ -27,7 +27,20 @@ const Carta = () => {
     },
   ];
 
-  const [vinhos, setVinhos] = useState(Produtos);
+  const [vinhos, setVinhos] = useState([]);
+  const [classe, setClasse] = useState('todos');
+
+  useEffect(()=> {
+    function getProdutoByTipo(){
+      if(classe === 'todos'){
+        setVinhos(Produtos);
+        return
+      }
+      setVinhos(Produtos.filter(produto=> produto.tipo === classe))
+
+    }
+    getProdutoByTipo()
+  },[classe])
 
   return (
     <>
@@ -41,7 +54,7 @@ const Carta = () => {
             <div
               className={styles.botao_filtro}
               key={tipo.value}
-              value={tipo.value}
+              onClick={()=>setClasse(tipo.value)}
             >
               {tipo.name}
             </div>
