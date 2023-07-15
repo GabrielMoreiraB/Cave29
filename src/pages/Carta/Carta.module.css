@@ -67,4 +67,5 @@ background: linear-gradient(90deg, rgba(130,39,38,1) 0%, rgba(2,0,36,1) 50%, rgb
     box-shadow: 10px 10px 10px rgba(78, 15, 15, 0.5);
     max-width: 2000px;
     margin: auto;
+    padding: 2em;
 }

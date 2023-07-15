@@ -3,10 +3,18 @@ import styles from './Navigation.module.css';
 import { FaInstagram, FaSearchLocation, FaWhatsapp } from 'react-icons/fa';
 import { FaMapLocationDot } from 'react-icons/fa6';
 import Links from '../Links';
+import { useState } from 'react';
+import Poupup from '../Poupup';
 
 const Navigation = () => {
+  const [showPopup, setShowPopup] = useState(true);
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
   return (
     <>
+      {showPopup && <Poupup onclose={handleClosePopup} showPopup={showPopup}/>} 
       <header>
         <section className={styles.cabecalho}>
           <div className={styles.cabecalho_links}>

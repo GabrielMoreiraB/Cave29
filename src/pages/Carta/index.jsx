@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import styles from './Carta.module.css';
 import Produtos from '../../Infos/produtos';
 import Card from '../../components/Card';
+import Loader from '../../components/Loader';
 
 const Carta = () => {
   const tipos = [
@@ -29,15 +30,17 @@ const Carta = () => {
 
   const [vinhos, setVinhos] = useState([]);
   const [classe, setClasse] = useState('todos');
+  const [loading, setLoading] = useState(true)
 
   useEffect(()=> {
     function getProdutoByTipo(){
       if(classe === 'todos'){
         setVinhos(Produtos);
+        setLoading(false)
         return
       }
       setVinhos(Produtos.filter(produto=> produto.tipo === classe))
-
+      setLoading(false)
     }
     getProdutoByTipo()
   },[classe])
@@ -63,9 +66,9 @@ const Carta = () => {
       </section>
 
       <section className={styles.card_space}>
-        {vinhos.map(vinho => (
+        {loading ? <Loader/> : (vinhos.map(vinho => (
           <Card key={vinho.id} vinho={vinho} />
-        ))}
+        )))}
       </section>
     </>
   );
