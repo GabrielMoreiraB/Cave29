@@ -99,7 +99,7 @@
     text-align: center;
     width: 65vw;
     color:  #822726;
-    background-image: url(fundo.png);
+    background-image: url(/fundo.png);
     background-position: left bottom;
     background-size: cover;
 }
@@ -155,7 +155,7 @@ background: linear-gradient(90deg, rgba(130,39,38,1) 0%, rgba(2,0,36,1) 50%, rgb
 
 .banner_fixed{
     height: 20vw;
-    background-image: url(bannerBarril.jpg);
+    background-image: url(/bannerBarril.jpg);
     background-position: left center;
     background-size: cover;
     background-attachment: fixed;
